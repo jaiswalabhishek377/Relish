@@ -26,7 +26,7 @@ const addFood = async (req, res) => {
 const listFood = async (req, res) => {
     try {
         const foods= await foodModel.find({}); // to fetch all food items from database how {} is used in find method to fetch all items
-        res.json({ success:true, foods });
+        res.json({ success:true, data:foods });
     } catch (error) {
         res.status(500).json({ success:false, message: "Error fetching food items" });
     }
