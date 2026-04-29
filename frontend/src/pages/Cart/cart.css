@@ -57,6 +57,7 @@
     width: max(15vw,200px);
     border-radius: 4px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .cart-promocode{
