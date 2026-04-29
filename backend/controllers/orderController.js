@@ -6,7 +6,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 // placing user order for frontend
 const placeOrder = async (req,res)=>{
-    const frontend_url = "https://relish-nu.vercel.app/"; // frontend url
+    const frontend_url = "https://relish-nu.vercel.app"; // frontend url
 
     try {
         const newOrder = new orderModel({
