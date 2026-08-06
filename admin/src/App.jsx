@@ -9,7 +9,8 @@ import {ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
-  const url="https://relish-backend-0dlx.onrender.com";
+  // const url="https://relish-backend-0dlx.onrender.com";
+  const url="http://localhost:5000";
   return (
     <div>
       <ToastContainer />

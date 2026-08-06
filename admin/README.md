@@ -1,16 +1,23 @@
-# React + Vite
+# 🛡️ Relish — Admin Control Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The administrator dashboard for **Relish**, built with **React 19**, **Vite**, and **React-Toastify**.
 
-Currently, two official plugins are available:
+## 🚀 Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Add Food Item (`/add`)**: Upload dish image, title, description, category, and price directly to the server.
+- **Manage Inventory (`/list`)**: View all active food items in a clean grid and delete dishes with instant API call.
+- **Order Processing (`/orders`)**: Monitor incoming customer orders, review delivery addresses, itemized food lists, and update live order fulfillment statuses (Food Processing -> Out for delivery -> Delivered).
+- **Toast Feedback**: Interactive user feedback on all API actions powered by `react-toastify`.
 
-## React Compiler
+## 💻 Development & Scripts
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# Install dependencies
+npm install
 
-## Expanding the ESLint configuration
+# Start Admin dev server
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Build production bundle
+npm run build
+```
