@@ -54,6 +54,40 @@ ul{
 .navbar-search-icon{
     position: relative;
 }
+
+.navbar-search-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.search-icon-btn {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.search-icon-btn:hover {
+    transform: scale(1.1);
+}
+
+.navbar-search-input {
+    padding: 7px 14px;
+    border: 1px solid rgba(255, 99, 71, 0.4);
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+    color: #49557e;
+    animation: fadeIn 0.3s ease;
+    width: 180px;
+    transition: all 0.3s ease;
+}
+
+.navbar-search-input:focus {
+    border-color: tomato;
+    box-shadow: 0 0 8px rgba(255, 99, 71, 0.2);
+}
+
 .dot{
     position: absolute;
     top: -8px;
