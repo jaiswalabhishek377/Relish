@@ -1,15 +1,16 @@
 import axios from 'axios';
 import {createContext, useEffect, useState} from 'react'
-// import { food_list } from '../assets/assets'
+import { food_list as staticFoodList } from '../assets/assets';
 
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) =>{
 
     const [cartItems,setCartItems] = useState({});
-    const url="https://relish-backend-0dlx.onrender.com";
+    // const url="https://relish-backend-0dlx.onrender.com";
+    const url="http://localhost:5000";
     const [token,setToken] = useState(localStorage.getItem("token") || "");
-    const [food_list,setFoodList] = useState([]);
+    const [food_list,setFoodList] = useState(staticFoodList);
 
     const addToCart = async (itemId)=>{
         if(!cartItems[itemId]){
@@ -48,10 +49,14 @@ const StoreContextProvider = (props) =>{
     const fetchFoodList = async ()=>{
         try {
             const response = await axios.get(url+"/api/food/list");
-            setFoodList(response.data.data || response.data.foods || []);
+            if (response.data.success && response.data.data && response.data.data.length > 0) {
+                setFoodList(response.data.data);
+            } else {
+                setFoodList(staticFoodList);
+            }
         } catch (error) {
-            console.error("Error fetching food list:", error);
-            setFoodList([]);
+            console.error("Error fetching food list, using static catalog:", error);
+            setFoodList(staticFoodList);
         }
     }
 

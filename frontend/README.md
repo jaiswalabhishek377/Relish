@@ -1,16 +1,41 @@
-# React + Vite
+# 🛒 Relish — Frontend Customer Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The client-side web application for **Relish**, built using **React 19** and **Vite**.
 
-Currently, two official plugins are available:
+## 🚀 Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Dynamic Hero & Explore Menu**: Smooth category filters for Salads, Rolls, Desserts, Pasta, Veg, Cake, Noodles, etc.
+- **Instant Dish Search**: Real-time keyword filter across food catalog names and descriptions.
+- **Cart Management**: Add/remove items with dynamic total calculation and persistent local storage sync.
+- **User Authentication Modal**: Sign In & Sign Up popup with JWT token persistence.
+- **Stripe Checkout Integration**: Seamless payment session generation & address submission.
+- **Order Tracking ("My Orders")**: Track live delivery progress (Food Processing -> Out for delivery -> Delivered).
+- **About Us & Feature Highlights**: Brand mission story, impact counters, and value pillars.
 
-## React Compiler
+## 📁 Component Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `src/components/Navbar/`: Navigation bar with search bar toggle, active section tracking, cart item badge, and profile dropdown.
+- `src/components/Header/`: Hero banner with visual tagline and quick menu CTA.
+- `src/components/ExploreMenu/`: Interactive category selector.
+- `src/components/FoodDisplay/`: Responsive catalog grid with search and category filtering.
+- `src/components/Fooditem/`: Food item card with quantity controls (+/-) and pricing.
+- `src/components/AboutUs/`: Showcase component highlighting Relish mission and stats.
+- `src/components/WhyUs/`: Feature cards highlighting fast delivery, quality, and payment security.
+- `src/components/Loginpopup/`: Auth modal dialog.
+- `src/context/storecontext.jsx`: React Context API provider for global state management.
 
-## Expanding the ESLint configuration
+## 💻 Development & Scripts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Install dependencies
+npm install
+
+# Start Vite dev server
+npm run dev
+
+# Build production bundle
+npm run build
+
+# Preview build
+npm run preview
+```

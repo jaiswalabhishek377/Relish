@@ -1,0 +1,75 @@
+.why-us {
+  margin-top: 60px;
+  padding: 40px 0;
+}
+
+.why-us-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.why-badge {
+  display: inline-block;
+  background-color: #fff4ec;
+  color: tomato;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.why-us-header h2 {
+  font-size: clamp(24px, 3.5vw, 36px);
+  color: #262626;
+  font-weight: 700;
+}
+
+.why-us-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.why-card {
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  padding: 30px 24px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 30px rgba(255, 99, 71, 0.12);
+  border-color: rgba(255, 99, 71, 0.4);
+}
+
+.why-icon {
+  font-size: 32px;
+  background: #fff4ec;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  margin-bottom: 4px;
+}
+
+.why-card h3 {
+  font-size: 18px;
+  color: #262626;
+  font-weight: 600;
+}
+
+.why-card p {
+  font-size: 14px;
+  color: #676767;
+  line-height: 1.6;
+}

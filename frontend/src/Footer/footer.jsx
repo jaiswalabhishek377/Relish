@@ -19,9 +19,9 @@ const Footer = () => {
                 <div className="list">
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Delivery</a></li>
-                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#why-us">Why Relish</a></li>
+                        <li><a href="#app-download">Delivery & App</a></li>
                     </ul>
                 </div>
             </div>

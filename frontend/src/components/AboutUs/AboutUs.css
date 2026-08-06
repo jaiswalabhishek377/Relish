@@ -1,0 +1,158 @@
+.about-us {
+  margin-top: 80px;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #fffbf8 0%, #fff4ec 100%);
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(255, 99, 71, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-us-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-badge {
+  display: inline-block;
+  background-color: rgba(255, 99, 71, 0.12);
+  color: tomato;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.about-us-header h2 {
+  font-size: clamp(28px, 4vw, 40px);
+  color: #262626;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.about-subtitle {
+  color: #676767;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-story {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-story h3 {
+  font-size: 24px;
+  color: #262626;
+  line-height: 1.3;
+}
+
+.about-story p {
+  color: #555555;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  background: #ffffff;
+  padding: 24px 20px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(255, 99, 71, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(255, 99, 71, 0.15);
+}
+
+.stat-card h4 {
+  font-size: 32px;
+  color: tomato;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.stat-card p {
+  color: #676767;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.about-pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 10px;
+}
+
+.pillar-card {
+  background: #ffffff;
+  padding: 28px 20px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.03);
+  border: 1px solid #f0f0f0;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.pillar-card:hover {
+  transform: translateY(-6px);
+  border-color: tomato;
+}
+
+.pillar-icon {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+
+.pillar-card h4 {
+  font-size: 18px;
+  color: #262626;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.pillar-card p {
+  font-size: 14px;
+  color: #747474;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-us {
+    padding: 35px 16px;
+    margin-top: 50px;
+    border-radius: 16px;
+  }
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+}
